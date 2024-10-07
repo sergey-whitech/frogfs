@@ -288,7 +288,7 @@ static int frogfs_vfs_access(void *ctx, const char *path, int amode)
 }
 #endif
 
-esp_err_t frogfs_vfs_register(const frogfs_vfs_conf_t *conf)
+esp_err_t esp_vfs_frogfs_register(const esp_vfs_frogfs_conf_t *conf)
 {
     assert(conf != NULL);
     assert(conf->fs != NULL);
